@@ -17,8 +17,9 @@ font-family: 'Josefin Sans', sans-serif;
  * {
     box-sizing: border-box;
   
- 
-
+}
+h3,h4{
+    font-weight:none;
 }
     .clearfix::after {
 		content: "";
@@ -42,20 +43,16 @@ font-family: 'Josefin Sans', sans-serif;
     overflow-x: hidden;
 }
 
-
+.borders{
+    border-radius: 0 !important;
+}
 
 
 
 
 
 /* header */
-.main-nav{
-    position: fixed;
-    width: 100%;
-   font-family: 'PT Sans', sans-serif;
-   z-index: 1;
-   
-}
+
 .main-header {
     padding-top: 0px;
    
@@ -66,34 +63,19 @@ font-family: 'Josefin Sans', sans-serif;
      
     
 }
-.main-header ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: orange ;
-}
 
-.main-header li {
-    float: left;
+.nav-color{
+    background-color: orange;
+    border-radius: 0px !important;
+     border: none !important;
+     font-size: 1.1em !important;
 }
-
- .main-header li a {
-    
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-   
+.nav-color a{color: black !important;}
+.burger{
+    padding: 10px 15px 15px 15px !important;
 }
-li a:hover {
-    text-decoration: none;
-    color: black;
-    background-color:wheat;
-}
-li a:visited{
-    text-decoration: none;
-    color: black;
+.hidden-content{
+    display: none;
 }
 .first-info{
     padding-top: 0.5em;
@@ -117,7 +99,7 @@ li a:visited{
 .name{
     
     margin: 0 auto;
-    width: 43%;
+    width: 230px;
     background-color: white;
     text-align: center;
 }
@@ -141,7 +123,7 @@ li a:visited{
 }
 .sections{
     margin-top: 0;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.8em;
 }
 .bg-1{
     margin-top: 2em;
@@ -153,6 +135,7 @@ li a:visited{
  margin-bottom: 2em;   
 }
 .foodingredients{
+    color: black;
     text-align: center;
     list-style: none;
     background-color: white;
@@ -162,7 +145,7 @@ li a:visited{
     border-radius: 0px !important;
 }
 .food-photo{
-margin-bottom: 0.5em;  
+margin-bottom: 1em;  
 }
 .backgrounds{
     background-color: orange !important;
@@ -196,8 +179,20 @@ after{
     font-weight: 200;
 }
 /*intro */
-/* reciepes */
+/* converter*/
+.calc-block{
 
+padding: 50px 40%;
+}
+.calc{
+    outline: 0px !important;
+     background-color: orange;
+}
+
+
+.icon-block{
+padding-bottom: 18px;
+}
 /* reciepes */
 /* content */
 
@@ -226,14 +221,17 @@ after{
    /* footer */
 
    /* responsive */
-   @media screen and (min-width: 1024px) {
-   .name{
-  
-    margin: 0 auto;
-    width: 28%;
-    background-color: white;
-    text-align: center;
+   @media screen and (min-width: 750px) {
+    .hidden-content{
+        display: block;
+    }
+    .burger{
+        display: none;
+    }
 }
+
+   @media screen and (min-width: 1024px) {
+   
 .name-block{
       padding-top: 13em;
     padding-bottom: 10em;
@@ -260,21 +258,12 @@ li a:visited{
 padding-left: 2em;
 padding-right: 2em;
 }
-.main-header li a {
-    
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 14px;
-   font-size: 1em;
-}
+
 	}
 
 
 @media screen and (width: 320px) {
-	.main-nav li{
-		font-size: 0.80em;
-	}	
+	
 	 li a:hover {
     text-decoration: none;
     color: black;
@@ -291,40 +280,29 @@ padding-right: 2em;
 	.name a{
 		font-size: 0.8em;
 	}
-    .main-header li a {
     
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 12px;
-   font-size: 1em;
-}
-}
+
 @media screen and (width: 414px) {
-     .main-header li a {
     
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 12px;
-   font-size: 1.05em;
-}
 }
 @media screen and (width: 360px) {
 .name a{
 		font-size: 0.65em;
         }
-     .main-header li a {
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 8px;
-   font-size: 0.9em;
-}
+    
 .name a{
 		font-size: 0.75em;
 	}}
 @media screen and (width: 375px) {
 .name a{
 		font-size: 0.75em;
-	}}
+	}
+  }
+}
+@media screen and (max-width:1024px){
+.calc-block{
+
+padding: 50px 20%;
+}
+}
+

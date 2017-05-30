@@ -3,12 +3,12 @@
      <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta charset="utf-8">
    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Noto+Sans|Nunito+Sans|Open+Sans|PT+Sans|Rubik" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" type="text/css">
-      <script src="js/jquery-3.2.0.js"></script>
+      <link rel="stylesheet" href="css/style.css">
+      <script src="js/jquery-3.2.1.js"></script>
      <script src="js/bootstrap.min.js"></script>
 
      
@@ -16,16 +16,28 @@
     <body>
 
 <header class="main-header">
-			
-                	<ul class="main-nav">
-          <li><a href="index.html">Головна</a></li>
-					<li><a href="#">Рецепти</a></li>
-					<li><a href="#">Калькулятор</a></li>
-					<li><a href="#">Таблиця</a></li>
-          </ul>
+  
+			<nav class="navbar  nav-color navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      
+      <i class="burger navbar-brand fa fa-navicon fa-2x"></i>
+   </div>
+    <ul class="nav navbar-nav hidden-content">
+      <li><a href="index.html">Головна</a></li>
+      <li class="active"><a href="receips.html">Рецепти</a></li>
+      <li><a href="convertor.html">Конвертор калорій</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right hidden-content">
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Зареєструватись</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Увійти</a></li>
+    </ul>
+  </div>
+</nav>
+
      <div class="main-link">
     <h1 class="name ">
-    <a href="receips.html">Цікаві рецепти</a>
+    <a href="receips.html">Рецепти</a>
      </h1>
 	  </div>
                      
@@ -41,23 +53,23 @@
 
 
       <div  class="col-xs-12 col-sm-6 col-md-3 bg-2 food-list" >
-    <img width="200px" height="170px" class="img-circle" src="" alt="Image">
+    <img width="200px" height="170px" class="img-circle"  alt="Image">
       <h4></h4>
       
     </div>
     <div class="col-xs-12 col-sm-6 col-md-3 bg-2 food-list" >
-    <img width="200px" height="170px" class="img-circle" src="" alt="Image">
+    <img width="200px" height="170px" class="img-circle"  alt="Image">
       <h4></h4>
       
     </div>
      <div class="col-xs-12 col-sm-6 col-md-3 bg-2 food-list">
-    <img width="200px" height="170px" class="img-circle" src="images/1col.jpg" alt="Image">
+    <img width="200px" height="170px" class="img-circle"  alt="Image">
       <h4>Цікаві рецепти</h4>
       
       
     </div>
      <div class="col-xs-12 col-sm-6 col-md-3 bg-2 food-list">
-    <img width="200px" height="170px" class="img-circle" src="images/1col.jpg" alt="Image">
+    <img width="200px" height="170px" class="img-circle"  alt="Image">
       <h4>Цікаві рецепти</h4>
      
      </div>
@@ -67,27 +79,23 @@
      <div class="row">
      <h3 class="sections">1 Страва</h3>
       <div class="col-xs-12 col-sm-6 col-md-3 bg-2 food-list">
-    <img width="200px" height="170px" class="img-circle" src="images/1col.jpg" alt="Image">
+    <img width="200px" height="170px" class="img-circle"  alt="Image">
       <h4>Цікаві рецепти</h4>
-      <p>У цьому розділі зібрані найсмачніші рецепти, серед яких точно знайдеться той, який буде якнайкраще підходити до настрою, сезону або нагоди.</p>
       
     </div>
      <div class="col-xs-12 col-sm-6 col-md-3 bg-2 food-list">
-    <img width="200px" height="170px" class="img-circle" src="images/1col.jpg" alt="Image">
+    <img width="200px" height="170px" class="img-circle"  alt="Image">
       <h4>Цікаві рецепти</h4>
-      <p>У цьому розділі зібрані найсмачніші рецепти, серед яких точно знайдеться той, який буде якнайкраще підходити до настрою, сезону або нагоди.</p>
       
     </div>
      <div class="col-xs-12 col-sm-6 col-md-3 bg-2 food-list">
-    <img width="200px" height="170px" class="img-circle" src="images/1col.jpg" alt="Image">
+    <img width="200px" height="170px" class="img-circle"  alt="Image">
       <h4>Цікаві рецепти</h4>
-      <p>У цьому розділі зібрані найсмачніші рецепти, серед яких точно знайдеться той, який буде якнайкраще підходити до настрою, сезону або нагоди.</p>
       
     </div>
      <div class="col-xs-12 col-sm-6 col-md-3 bg-2 food-list">
-    <img width="200px" height="170px" class="img-circle" src="images/1col.jpg" alt="Image">
+    <img width="200px" height="170px" class="img-circle"  alt="Image">
       <h4>Цікаві рецепти</h4>
-      <p>У цьому розділі зібрані найсмачніші рецепти, серед яких точно знайдеться той, який буде якнайкраще підходити до настрою, сезону або нагоди.</p>
      </div>
     </div>
 
@@ -95,27 +103,23 @@
      <div class="row">
      <h3 class="sections">2 Страва</h3>
       <div class="col-xs-12 col-sm-6 col-md-3 bg-2 food-list">
-    <img width="200px" height="170px" class="img-circle" src="images/1col.jpg" alt="Image">
+    <img width="200px" height="170px" class="img-circle"  alt="Image">
       <h4>Цікаві рецепти</h4>
-      <p>У цьому розділі зібрані найсмачніші рецепти, серед яких точно знайдеться той, який буде якнайкраще підходити до настрою, сезону або нагоди.</p>
       
     </div>
      <div class="col-xs-12 col-sm-6 col-md-3 bg-2 food-list">
-    <img width="200px" height="170px" class="img-circle" src="images/1col.jpg" alt="Image">
+    <img width="200px" height="170px" class="img-circle"  alt="Image">
       <h4>Цікаві рецепти</h4>
-      <p>У цьому розділі зібрані найсмачніші рецепти, серед яких точно знайдеться той, який буде якнайкраще підходити до настрою, сезону або нагоди.</p>
       
     </div>
      <div class="col-xs-12 col-sm-6 col-md-3 bg-2 food-list">
-    <img width="200px" height="170px" class="img-circle" src="images/1col.jpg" alt="Image">
+    <img width="200px" height="170px" class="img-circle"  alt="Image">
       <h4>Цікаві рецепти</h4>
-      <p>У цьому розділі зібрані найсмачніші рецепти, серед яких точно знайдеться той, який буде якнайкраще підходити до настрою, сезону або нагоди.</p>
       
     </div>
      <div class="col-xs-12 col-sm-6 col-md-3 bg-2 food-list">
-    <img width="200px" height="170px" class="img-circle" src="images/1col.jpg" alt="Image">
+    <img width="200px" height="170px" class="img-circle"  alt="Image">
       <h4>Цікаві рецепти</h4>
-      <p>У цьому розділі зібрані найсмачніші рецепти, серед яких точно знайдеться той, який буде якнайкраще підходити до настрою, сезону або нагоди.</p>
      </div>
     </div>
 
@@ -123,27 +127,23 @@
      <div class="row">
      <h3 class="sections">Дієтичні солодкі страви</h3>
       <div class="col-xs-12 col-sm-6 col-md-3 bg-2 food-list">
-    <img width="200px" height="170px" class="img-circle" src="images/1col.jpg" alt="Image">
+    <img width="200px" height="170px" class="img-circle"  alt="Image">
       <h4>Цікаві рецепти</h4>
-      <p>У цьому розділі зібрані найсмачніші рецепти, серед яких точно знайдеться той, який буде якнайкраще підходити до настрою, сезону або нагоди.</p>
       
     </div>
      <div class="col-xs-12 col-sm-6 col-md-3 bg-2 food-list">
-    <img width="200px" height="170px" class="img-circle" src="images/1col.jpg" alt="Image">
+    <img width="200px" height="170px" class="img-circle"  alt="Image">
       <h4>Цікаві рецепти</h4>
-      <p>У цьому розділі зібрані найсмачніші рецепти, серед яких точно знайдеться той, який буде якнайкраще підходити до настрою, сезону або нагоди.</p>
       
     </div>
      <div class="col-xs-12 col-sm-6 col-md-3 bg-2 food-list">
-    <img width="200px" height="170px" class="img-circle" src="images/1col.jpg" alt="Image">
+    <img width="200px" height="170px" class="img-circle" alt="Image">
       <h4>Цікаві рецепти</h4>
-      <p>У цьому розділі зібрані найсмачніші рецепти, серед яких точно знайдеться той, який буде якнайкраще підходити до настрою, сезону або нагоди.</p>
       
     </div>
      <div class="col-xs-12 col-sm-6 col-md-3 bg-2 food-list">
-    <img width="200px" height="170px" class="img-circle" src="images/1col.jpg" alt="Image">
+    <img width="200px" height="170px" class="img-circle"  alt="Image">
       <h4>Цікаві рецепти</h4>
-      <p>У цьому розділі зібрані найсмачніші рецепти, серед яких точно знайдеться той, який буде якнайкраще підходити до настрою, сезону або нагоди.</p>
      </div>
     </div>
 
@@ -162,7 +162,7 @@
       <div class="modal-header text-center">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
         <img width="250px" height="200px" class="food-photo" alt="Image">
-        <h4 class="modal-title"></h4>
+        <h3 class="modal-title"></h3>
       </div>
       <div class="modal-body text-center">
       
@@ -180,9 +180,11 @@
 	
 	 <div class="row">
 		  <div class="col-xs-12 col-sm-6 col-md-6">
-			<h4>Контакти</h4>  
-			  <p>044 486 3647</p>
-			  	  <p>lyceum38.kiev.ua</p>
+			<h4>Контакти</h4> 
+        <p>Адреса: 01054, Україна, м. Київ, вул. Гоголівська, 31</p> 
+			  <p>Телефон/факс: (044)486-87-68, (044)486-36-47</p>
+			  <p>Сайт:lyceum38.kiev.ua</p>
+        <p>E-mail: lyceum38@gmail.com</p>
 		 </div>
 		 <div class="col-xs-12 col-sm-6 col-md-6">
 			<h4>Ми на карті міста</h4>
