@@ -1,0 +1,18 @@
+
+.imggroup{
+    width: 100px;
+    height: 125px;
+}
+.grad{
+     transition: box-shadow 0.5s;
+     overflow: hidden;
+}
+.grad:hover{
+    box-shadow: 5px 5px 40px grey;
+    padding: 0;}
+
+.selected{
+    border: 1px solid orange;
+    transform: scale(1.5,1.5);
+    transition: 2s;
+}
